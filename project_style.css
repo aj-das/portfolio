@@ -181,6 +181,7 @@ nav {
     overflow: hidden; /* Ensures content does not spill out */
     font-size: 40px;
     transition: transform 0.3s ease; /* Smooth transform on hover */
+    overflow: auto; /* Add this to handle overflowing content */
 }
 
 .box:hover {
@@ -239,12 +240,14 @@ nav {
     padding: 20px; /* Padding for the info text */
 }
 
-.box:hover .title {
-    opacity: 0; /* Hide the title on hover */
+.box:hover .info, .box:hover .coursework, .box:hover .experienceInfo {
+    /* Ensure the content is visible on hover */
+    opacity: 1;
 }
 
-.box:hover .info {
-    opacity: 1; /* Show the info on hover */
+.box:hover .title {
+    /* Ensure the content is visible on hover */
+    opacity: 0;
 }
 
 @media screen and (max-width: 768px) {
