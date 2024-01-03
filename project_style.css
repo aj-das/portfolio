@@ -191,6 +191,7 @@ nav {
 
 .box:hover {
     transform: translateY(-10px);
+    cursor: default;
 }
 
 .box::before {
