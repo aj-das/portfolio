@@ -104,6 +104,11 @@ nav {
     font-size: 4rem; /* Adjust the font size as needed */
 }
 
+.content h3 {
+    margin-top: 2rem;
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
 .center p {
     font-size: 2rem;
     color: #fff;
