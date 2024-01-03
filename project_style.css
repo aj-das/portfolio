@@ -216,6 +216,7 @@ nav {
     color: #fff; /* White color for the title */
     font-size: 40px; /* Large font size for the title */
     z-index: 2; /* Ensures the title is above the info */
+    cursor: default;
 }
 
 .coursework {
@@ -225,6 +226,7 @@ nav {
     z-index: 1; /* Below the title */
     background: rgba(0, 39, 76, 0.8); /* Semi-transparent background */
     padding: 20px; /* Padding for the info text */
+    cursor: default;
 }
 
 .experienceInfo {
@@ -234,6 +236,7 @@ nav {
     z-index: 1; /* Below the title */
     background: rgba(0, 39, 76, 0.8); /* Semi-transparent background */
     padding: 20px; /* Padding for the info text */
+    cursor: default;
 }
 
 
@@ -244,11 +247,13 @@ nav {
     z-index: 1; /* Below the title */
     background: rgba(0, 39, 76, 0.8); /* Semi-transparent background */
     padding: 20px; /* Padding for the info text */
+    cursor: default;
 }
 
 .box:hover .info, .box:hover .coursework, .box:hover .experienceInfo {
     /* Ensure the content is visible on hover */
     opacity: 1;
+    cursor: default;
 }
 
 .box:hover .title {
