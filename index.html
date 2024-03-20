@@ -18,15 +18,15 @@
         <nav class="navbar">
             <div class="nav-links">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./projects.html">PROJECTS</a></li>
                     <div class="dropdown">
                         <button class="dropbtn">CONTACT</button>
                         <div class="dropdown-content">
                           <a href="https://www.linkedin.com/in/arinjoydas/">LinkedIn</a>
                           <a href="mailto:arinjoy@umich.edu">Email</a>
-                          <a href="assets/AJDas_ResumeWinter2024websiteUPDATED.pdf">Resume</a>
+                          <a href="assets/AJDas_ResumeWinter2024 website.pdf">Resume</a>
                         </div>
                       </div>
                 </ul>
@@ -35,7 +35,7 @@
         <section class="hero"></section>
             <div class="content">
                 <div class="column-left">
-                    <h1>Arinjoy (AJ) Das</h1>
+                    <h1 id="typing-effect"></h1>
                     <p class="subtitle">Sophomore at UMich studying CS</p>
                     <p class="description">Balancing technical expertise with creative pursuits, I'm a multifaceted
                     professional ready to tackle the challenges of the tech world.</p>
@@ -45,5 +45,28 @@
                 </div>
             </div>    
 </body>
+
+<script>
+    const animateText = "Arinjoy (AJ) Das";
+    let index = 0;
+    const typingspeed = 100;
+    const subtitleText = "Sophomore at UMich studying CS";
+
+    function typeEffect(){
+        const targetElement = document.getElementById("typing-effect");
+
+        if(index < animateText.length){
+            targetElement.innerHTML += animateText[index];
+            index++;
+            setTimeout(typeEffect, typingspeed);
+        } else {
+            // Show the subtitle after the main title has been typed out
+            subtitleElement.style.display = "block";
+        }
+    }
+
+    window.onload = typeEffect;
+    
+</script>
 
 </html>
