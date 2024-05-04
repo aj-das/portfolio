@@ -5,15 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.back {
-    min-height: 100vh; /* This ensures it takes at least the full height of the viewport */
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 39, 76, 0.6), rgba(0, 39, 76, 0.6)),
-    url('assets/northcampus.jpg');
-    
-    background-size: cover;
-    background-position: center;
-    position: relative;
+body {
+    background-color: rgba(0, 39, 76);
+    min-height: 100vh;
+    margin: 0;
 }
 
 .logo {
