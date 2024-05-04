@@ -20,13 +20,13 @@
                 <ul>
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
-                    <li><a href="./projects.html">PROJECTS</a></li>
+                    <li><a href="./experience.html">EXPERIENCE</a></li>
                     <div class="dropdown">
                         <button class="dropbtn">CONTACT</button>
                         <div class="dropdown-content">
                           <a href="https://www.linkedin.com/in/arinjoydas/">LinkedIn</a>
                           <a href="mailto:arinjoy@umich.edu">Email</a>
-                          <a href="assets/AJDas_ResumeWinter2024UPDATED.pdf">Resume</a>
+                          <a href="assets/AJDas_ResumeWinter2024website.pdf">Resume</a>
                         </div>
                       </div>
                 </ul>
@@ -49,19 +49,23 @@
 <script>
     const animateText = "Arinjoy (AJ) Das";
     let index = 0;
-    const typingspeed = 100;
+    const typingspeed = 120;
+    const cursorChar = '|';
+    let cursorVisible = true;
     const subtitleText = "Sophomore at UMich studying CS";
 
     function typeEffect(){
         const targetElement = document.getElementById("typing-effect");
 
+        cursorVisible = !cursorVisible;
+        const cursor = cursorVisible ? cursorChar : '';
+
         if(index < animateText.length){
-            targetElement.innerHTML += animateText[index];
+            targetElement.innerHTML = animateText.substring(0, index+1) + cursor;
             index++;
             setTimeout(typeEffect, typingspeed);
         } else {
-            // Show the subtitle after the main title has been typed out
-            subtitleElement.style.display = "block";
+            targetElement.innerHTML = animateText; // Add + cursor to keep it blinking
         }
     }
 
