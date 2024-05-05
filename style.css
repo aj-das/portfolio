@@ -70,6 +70,10 @@ nav {
     font-size: 14px;
 }
 
+.nav-links a.active {
+    text-decoration: underline;
+}
+
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
