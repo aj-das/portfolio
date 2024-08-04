@@ -195,6 +195,9 @@ img {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 20px;
     border-radius: 8px; /* Rounded corners */
+
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center; /* Ensure text within the card is centered */
 }
 
 .image-placeholder {
@@ -205,7 +208,12 @@ img {
 }
 
 .text-content {
-    flex: 1; /* Take remaining space */
+    flex: 1; 
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .text-content h3 {
