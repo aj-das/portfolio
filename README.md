@@ -17,4 +17,3 @@ This site showcases my projects 🚀, experiences, and skills, highlighting my c
 - **JavaScript** 🖥️: For dynamic interactions and functionality.
 - **React.js** ⚛️: Used to build a single-page application that is efficient and user-friendly.
 - **Node.js/Express** 🌐: For backend functionality (if applicable).
-- **Other Tools** 🧰: Any other tools like Sass, Bootstrap, etc., used in the development.
