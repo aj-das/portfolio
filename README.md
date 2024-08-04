@@ -1,6 +1,7 @@
-# 📌 Arinjoy Das Portfolio Website
+# 📌 Arinjoy Das' Portfolio Website
 
-Welcome to the repository for my professional portfolio website 🌐. This site showcases my projects 🚀, experiences, and skills, highlighting my contributions to the fields of [your fields, e.g., Data Science, Software Engineering, Design, etc.].
+Welcome to the repository for my professional portfolio website 🌐. 
+This site showcases my projects 🚀, experiences, and skills, highlighting my contributions to the fields of Data Science, Software Engineering, Design.
 
 ## 🎨 Website Features
 
