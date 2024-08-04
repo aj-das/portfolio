@@ -217,13 +217,15 @@ img {
 }
 
 .text-content h3 {
+    text-align: center;
     margin-bottom: 10px; /* Space between title and text */
 }
 
 .text-content p {
     color: #666; /* Lighter text color */
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     margin-bottom: 10px; /* Space between title and text */
+    margin-top: 15px;
 }
 
 .classes, .skills {
