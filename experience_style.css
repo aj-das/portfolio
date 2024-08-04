@@ -214,6 +214,8 @@ img {
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
+    padding: 10px;
+    width: 100%;
 }
 
 .text-content h3 {
@@ -253,6 +255,25 @@ img {
     justify-content: center; /* Center items horizontally */
     gap: 40px; /* Space between items */
     font-size: 2.25rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Space between cards */
+    margin: 20px 0; /* Top and bottom margin */
+}
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Stack cards vertically on very small screens */
+    }
 }
 
 @media (max-width: 768px) {
