@@ -209,7 +209,12 @@ img {
     width: 300px;
     height: 300px;
     background-color: #000;
+}
 
+.image-placeholder2 {
+    width: 1060px;
+    height: 680px;
+    background-color: #000;
 }
 
 .text-content {
@@ -272,9 +277,14 @@ img {
 
 .grid-container2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    grid-template-rows: auto; /* Automatically adjust row height */
     gap: 20px; /* Space between cards */
     margin: 20px 0; /* Top and bottom margin */
+}
+
+.grid-container2 .card:nth-child(3) {
+    grid-column: span 2; /* Span the third card across both columns */
 }
 
 .grid-container3 {
