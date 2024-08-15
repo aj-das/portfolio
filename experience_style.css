@@ -240,7 +240,7 @@ img {
     margin-top: 20px;
 }
 
-.classes, .skills {
+.classes {
     background-color: #00274C; /* Match the background */
     padding: 20px 0; /* Padding for visual spacing */
     color: #fff; /* Text color */
@@ -251,7 +251,7 @@ img {
     margin-bottom: 20px; /* Space below the headings */
 }
 
-.class-item, .skill-item {
+.class-item {
     background-color: #fff; /* Background color for items */
     color: #00274C; /* Text color for items */
     padding: 10px 20px; /* Padding inside items */
@@ -261,7 +261,7 @@ img {
     font-weight: bold;
 }
 
-.class-item, .skill-item {
+.class-item {
     display: inline-flex; /* Enables flexbox properties */
     justify-content: center; /* Center items horizontally */
     gap: 40px; /* Space between items */
@@ -292,6 +292,86 @@ img {
     grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
     gap: 20px; /* Space between cards */
     margin: 20px 0; /* Top and bottom margin */
+}
+
+.interests {
+    background-color: #00274C; /* Match the background */
+    padding: 20px 0; /* Padding for visual spacing */
+    color: #fff; /* Text color */
+}
+
+.interests h2 {
+    text-align: center; /* Center the headings */
+    margin-bottom: 20px; /* Space below the headings */
+}
+
+.interests-item {
+    background-color: #fff; /* Background color for items */
+    color: #00274C; /* Text color for items */
+    padding: 10px 20px; /* Padding inside items */
+    margin: 10px auto; /* Margin for spacing, auto for horizontal centering in classes */
+    width: fit-content; /* Adjust width to content */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+}
+
+.interests-item{
+    display: inline-flex; /* Enables flexbox properties */
+    justify-content: center; /* Center items horizontally */
+    gap: 40px; /* Space between items */
+    font-size: 2.25rem;
+}
+
+
+/* Skills Section */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Space between the categories */
+    justify-items: center; /* Center the categories horizontally */
+    padding: 20px 0; /* Padding for visual spacing */
+    background-color: #00274C; /* Background color */
+    color: #fff; /* Text color */
+}
+
+.skill-category {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust min width as per content */
+    gap: 10px; /* Consistent spacing */
+    background-color: #003366; /* Darker blue background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.skill-item {
+    background-color: #fff; /* White background */
+    color: #00274C; /* Text color */
+    padding: 15px 20px; /* Ample padding */
+    min-height: 50px; /* Minimum height for uniformity */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: 600; /* Bold font for better readability */
+    font-size: 1.2rem; /* Slightly larger font */
+    text-align: center; /* Centered text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth transitions for interactions */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.skill-item:hover {
+    background-color: #e6f0ff; /* Light blue background on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+.skill-category h3 {
+    grid-column: 1 / -1; /* Span the title across all columns */
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 10px; /* Space below the title */
+    color: #ffcb05; /* Michigan maize for titles */
 }
 
 @media (max-width: 1024px) {
