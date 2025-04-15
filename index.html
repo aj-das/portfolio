@@ -6,44 +6,47 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="back">
-        <div class="logo">Arinjoy (AJ) Das
-        </div>
-        
-        <nav class="navbar">
-            <div class="nav-links">
-                <ul>
-                    <li><a href="./index.html" class="active bold">HOME</a></li>
-                    <li><a href="./about.html" class="bold">ABOUT</a></li>
-                    <li><a href="./experience.html" class="bold">EXPERIENCE</a></li>
-                    <div class="dropdown">
-                        <button class="dropbtn bold">CONTACT</button>
-                        <div class="dropdown-content">
-                          <a href="https://www.linkedin.com/in/arinjoydas/">LinkedIn</a>
-                          <a href="mailto:arinjoy@umich.edu">Email</a>
-                          <a href="assets/AJDas_Resumefinal.pdf" target="_blank">Resume</a>
-                        </div>
-                      </div>
-                </ul>
+        <header>
+            <div class="logo">Arinjoy (AJ) Das
             </div>
-        </nav>
+
+            <nav class="navbar">
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="./index.html" class="active bold">HOME</a></li>
+                        <li><a href="./about.html" class="bold">ABOUT</a></li>
+                        <li><a href="./experience.html" class="bold">EXPERIENCE</a></li>
+                        <li class="dropdown">
+                            <button class="dropbtn bold">CONTACT</button>
+                            <div class="dropdown-content">
+                                <a href="https://www.linkedin.com/in/arinjoydas/">LinkedIn</a>
+                                <a href="mailto:arinjoy@umich.edu">Email</a>
+                                <a href="assets/AJDas_Resumefinal.pdf" target="_blank">Resume</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
         <section class="hero"></section>
-            <div class="content">
-                <div class="column-left">
-                    <h1 id="typing-effect"></h1>
-                    <p class="subtitle">Junior at UMich studying CS</p>
-                    <p class="description">Balancing technical expertise with creative pursuits, I'm a multifaceted
+        <main class="content">
+            <div class="column-left">
+                <h1 id="typing-effect"></h1>
+                <p class="subtitle">Junior at UMich studying CS</p>
+                <p class="description">Balancing technical expertise with creative pursuits, I'm a multifaceted
                     professional ready to tackle the challenges of the tech world.</p>
-                </div>
-                <div class="profilepicture">
-                    <img src="assets/headshot2025.jpg" class="hero-image" alt="Profile Picture">
-                </div>
-            </div>    
+            </div>
+            <div class="profilepicture">
+                <img src="assets/headshot2025.jpg" class="hero-image" alt="Profile Picture">
+            </div>
+        </main>
 </body>
 
 <script>
@@ -54,14 +57,14 @@
     let cursorVisible = true;
     const subtitleText = "Junior at UMich studying CS";
 
-    function typeEffect(){
+    function typeEffect() {
         const targetElement = document.getElementById("typing-effect");
 
         cursorVisible = !cursorVisible;
         const cursor = cursorVisible ? cursorChar : '';
 
-        if(index < animateText.length){
-            targetElement.innerHTML = animateText.substring(0, index+1) + cursor;
+        if (index < animateText.length) {
+            targetElement.innerHTML = animateText.substring(0, index + 1) + cursor;
             index++;
             setTimeout(typeEffect, typingspeed);
         } else {
@@ -70,7 +73,7 @@
     }
 
     window.onload = typeEffect;
-    
+
 </script>
 
 </html>
