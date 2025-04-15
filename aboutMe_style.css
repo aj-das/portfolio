@@ -81,44 +81,56 @@ nav {
 }
 
 .center {
-    padding: 2rem; /* Adjust the padding to ensure there's space around the text */
-    max-width: 1200px; /* Or any maximum width you prefer */
-    margin: auto; /* This will center the content */
-    text-align: justify; /* Justify the text to spread it evenly */
+    padding: 2rem;
+    /* Adjust the padding to ensure there's space around the text */
+    max-width: 1200px;
+    /* Or any maximum width you prefer */
+    margin: auto;
+    /* This will center the content */
+    text-align: justify;
+    /* Justify the text to spread it evenly */
 }
 
 .center h1 {
     margin-top: 2rem;
-    font-size: 5rem; 
+    font-size: 5rem;
     color: #fff;
-    margin-bottom: 1rem; /* Reduce margin if it's too much */
+    margin-bottom: 1rem;
+    /* Reduce margin if it's too much */
 }
 
 .center .description {
     font-size: 1.25rem;
     line-height: 1.5;
     color: #fff;
-    margin-bottom: 1rem; /* Adjust bottom margin to reduce white space */
+    margin-bottom: 1rem;
+    /* Adjust bottom margin to reduce white space */
 }
 
 .image-gallery {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Adjust the space between images */
-    margin-top: 20px; /* Space after the about me text */
+    gap: 20px;
+    /* Adjust the space between images */
+    margin-top: 20px;
+    /* Space after the about me text */
     margin-bottom: 40px;
 }
 
 .image-box {
-    flex: 0 0 calc(33.333% - 20px); /* Adjust the width for three images and a gap */
-    position: relative; /* Needed for the absolute positioning of the image */
-    overflow: hidden; /* Hides the overflow to crop the image */
+    flex: 0 0 calc(33.333% - 20px);
+    /* Adjust the width for three images and a gap */
+    position: relative;
+    /* Needed for the absolute positioning of the image */
+    overflow: hidden;
+    /* Hides the overflow to crop the image */
 }
 
 .image-box::before {
     content: '';
     display: block;
-    padding-top: 100%; /* This will create a square aspect ratio */
+    padding-top: 100%;
+    /* This will create a square aspect ratio */
 }
 
 .image-box img {
@@ -140,48 +152,50 @@ nav {
     font-size: 14px;
     border: none;
     cursor: pointer;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: rgba(0, 39, 76, 0.9);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
     transform: translateX(-25%);
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: center;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-      background-color: #ddd;
-      border-radius: 10px;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-      background-color: #00274C;
-  }
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgba(255, 203, 5, 0.6);
+    border-radius: 10px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #00274C;
+}
 
 @media screen and (max-width: 768px) {
     .content {
@@ -191,11 +205,14 @@ nav {
 
     .nav-links ul {
         position: absolute;
-        top: 100%; /* Right below the nav bar */
+        top: 100%;
+        /* Right below the nav bar */
         left: 0;
-        background: rgba(0, 39, 76, 0.9); /* Semi-transparent background */
+        background: rgba(0, 39, 76, 0.9);
+        /* Semi-transparent background */
         width: 100%;
-        display: none; /* Hidden by default */
+        display: none;
+        /* Hidden by default */
     }
 
     .nav-links ul li {
@@ -215,12 +232,16 @@ nav {
         font-size: 12px;
     }
 
-    .column-left, .column-right {
+    .column-left,
+    .column-right {
         padding: 1rem;
     }
 
-    .column-left h1, .column-left .subtitle, .column-left .description {
-        text-align: center; /* Align text to the left */
+    .column-left h1,
+    .column-left .subtitle,
+    .column-left .description {
+        text-align: center;
+        /* Align text to the left */
         margin-bottom: 20px;
     }
 }
