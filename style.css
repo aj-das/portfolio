@@ -11,6 +11,7 @@ body {
     height: 100%;
     background-image: linear-gradient(rgba(0, 39, 76, 0.6), rgba(0, 39, 76, 0.6)),
         url('assets/northcampus.jpg');
+    background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
